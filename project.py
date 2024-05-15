@@ -4,6 +4,7 @@ from pytube import YouTube
 def video_download():
         try: 
 
+                
             yt_link = YouTube(link.get())
             title = yt_link.title
             info.configure(text = f"The title of the video that you are downloading is\n {title}.", font = ("Helvetica", 15, "bold"))
